@@ -802,11 +802,11 @@ def main(args, result_handler=None):
     init_logger(args.verbose, "problog_sample")
 
     if args.seed is not None:
-        random.seed(args.seed)
+        #random.seed(args.seed)
     else:
         seed = random.random()
         logging.getLogger("problog_sample").debug("Seed: %s", seed)
-        random.seed(seed)
+        #random.seed(seed)
 
     pl = PrologFile(args.filename)
 

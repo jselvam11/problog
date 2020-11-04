@@ -169,7 +169,7 @@ class TestEngineCycles(unittest.TestCase):
 
         for i in range(0, N):
             seed = str(random.random())[2:]
-            random.seed(seed)
+            #random.seed(seed)
             random.shuffle(program)
             txt = "\n".join(program)
             f = DefaultEngine(label_all=True).ground_all(PrologString(txt))
